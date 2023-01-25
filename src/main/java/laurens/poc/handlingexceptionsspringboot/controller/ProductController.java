@@ -24,6 +24,8 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public Product getProductById(@PathVariable("id") long id) throws Exception {
+        String newVariable = "Hello";
+        System.out.println(newVariable);
         return this.productService.findProductById(id);
     }
 
